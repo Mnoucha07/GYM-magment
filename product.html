@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manage Products</title>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="dashboard.html" id="back"> Manage Members</a></li>
+      <box-icon type='solid' name='id-card'></box-icon>
+      <li><a href="login.html" id="logoutBtn"> Logout</a></li>
+      <box-icon name='lock-alt'></box-icon>
+    </ul>
+  </nav>
+
+  <section id="productsSection" class="section">
+    <h1>Manage Products</h1>
+    <form id="productForm" class="card">
+      <input type="text" id="thebuyername" placeholder="Full name " required />
+      <input type="text" id="productName" placeholder="Product Name" required />
+      <input type="number" id="productPrice" placeholder="Price" required />
+      <input type="number" id="productStock" placeholder="Stock" required />
+      <button type="submit">Add Product</button>
+    </form>
+   
+    <table>
+      <thead>
+        <tr>
+          <th>name of costomer</th>
+          <th>Name of product</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="productList"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

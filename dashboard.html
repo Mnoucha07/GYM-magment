@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head> 
+<body> 
+  <nav class="navbar">
+    
+        <ul>
+          <li><a href="#membersSection"> Manage Members</a></li>
+          <box-icon type='solid' name='id-card'></box-icon>
+          <li><a href="product.html"> Manage Products</a></li>
+          <box-icon name='cart-alt'></box-icon>
+          <li><a href="login.html" id="logoutBtn"> Logout</a></li>
+          <box-icon name='lock-alt'></box-icon>
+        </ul>
+      </nav>
+      
+    </ul>
+  </nav>
+
+<!-- Members Section -->
+<section id="membersSection" class="section">
+  <h1>Manage Members</h1>
+  <form id="memberForm" class="card">
+    <input type="text" id="memberName" placeholder="Full name" required />
+
+    
+    <div class="membership-type-container">
+      <button type="button" class="membership-btn" id="regularBtn" data-value="regular">Regular</button>
+      <button type="button" class="membership-btn" id="cardioBtn" data-value="cardio">Cardio</button>
+      <button type="button" class="membership-btn" id="fullBtn" data-value="full">Full</button>
+    </div>
+    <input type="hidden" id="membershipType" name="membershipType" required />
+    
+    <input type="date" id="paymentDate" required />
+    <input type="number" id="monthsPaid" placeholder="Months Paid" required />
+    
+    <button type="submit">Add Member</button>
+  </form>
+
+  <!-- Search Input (Centered) -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search Member...">
+  </div>
+
+  <!-- Table for Members -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Start</th>
+          <th>Months</th>
+          <th>End</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="memberList"></tbody>
+    </table>
+  </div>
+</section>
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
