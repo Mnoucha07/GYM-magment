@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GYM Management</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  
+</head>
+<body class="background-image">
+  
+
+  <!-- Login Form -->
+  <div class="container center-screen">
+    <form id="loginForm" class="card">
+      <h2>Admin Login</h2>
+
+      <div class="input-container">
+        <box-icon type='solid' name='user'></box-icon>
+        <input type="text" id="username" placeholder="Username" required />
+      </div>
+
+      <div class="input-container">
+        <box-icon type='solid' name='lock-alt'></box-icon>
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+
+      <button type="submit">Login</button>
+      <p class="error" id="loginError"></p>
+    </form>
+  </div>
+
+  <script>
+    const correctUsername = "admin";
+    const correctPassword = "12345";
+
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const error = document.getElementById("loginError");
+
+      if (username === correctUsername && password === correctPassword) {
+        window.location.href = "dashboard.html";
+      } else {
+        error.textContent = "Wrong username or password.";
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+

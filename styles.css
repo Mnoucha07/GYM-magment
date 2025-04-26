@@ -3,13 +3,13 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:color(srgb rgb(253, 253, 253) green blue);
-    min-height: 101vh;
+    min-height: 100vh;
+    height: 100vh;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #413636;
+    background-color: #2b2626;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -283,8 +283,8 @@ body {
 }
 
 /* Body background */
-body.background-image {
-    background-image: url('background-image.jpg');
+body{
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -292,7 +292,7 @@ body.background-image {
 
 /* Navbar */
 .navbar {
-    background-color: #4648e2;
+    background-color: #f70505;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -319,7 +319,7 @@ body.background-image {
 }
 
 .navbar a:hover {
-    color: #2edbb9;
+    color: #27c0a1;
 }
 
 /* Section Container */
@@ -419,7 +419,7 @@ button:hover {
 .membership-btn {
     padding: 14px 30px;
     border-radius: 30px;
-    background: linear-gradient(135deg, #4CAF50, #43A047);
+    background: linear-gradient(135deg, #b2f1b4, #e71d1d);
     color: white;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -427,7 +427,7 @@ button:hover {
 
 .membership-btn:hover {
     transform: scale(1.05);
-    background: linear-gradient(135deg, #43A047, #388E3C);
+    background: linear-gradient(135deg, #611515, #ff0000);
 }
 
 .membership-btn.selected {
@@ -485,7 +485,19 @@ tr:hover {
 }
 
 /* Login Section */
-.login-section {
+.center-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+#login-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -496,7 +508,7 @@ tr:hover {
     padding: 20px;
 }
 
-.login-form {
+#login-form {
     background-color: rgba(0, 0, 0, 0.75);
     padding: 30px;
     border-radius: 20px;
@@ -529,14 +541,6 @@ tr:hover {
         flex-direction: column;
     }
 }
-body.background-image {
-    background-image: url('img/gym-background.jpg'); /* Ensure the path is correct */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Makes the background fixed when scrolling */
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
+
+
  
